@@ -1,9 +1,11 @@
 function change(){
-  const text = document.querySelector('.kotak .input input');
+  const text = document.querySelector('.kotak .input #text');
   const align = document.querySelector('.kotak .input #align');
   const bg = document.querySelector('.kotak .input #bg');
   const quote = document.querySelector('.quotes .gambar');
   const tulisan = document.querySelector('.quotes .gambar .text');
+  const dari = document.querySelector('.quotes .gambar .dari');
+  const sumber = document.querySelector('.kotak .input #dari');
   
   quote.classList.remove('bg1');
   quote.classList.remove('bg2');
@@ -19,6 +21,7 @@ function change(){
   tulisan.classList.add(align.value);
   
   tulisan.innerHTML = text.value;
+  dari.innerHTML = " ~ "+sumber.value+" ~ ";
 }
 
 function convert(){
